@@ -8,10 +8,22 @@
 
 import UIKit
 
+@objc protocol MenuTransitionManagerDelegate {
+    func dismiss()
+}
+
 class MenuTransitionManager: NSObject {
     let duration = 0.5
     var isPresenting = false
-    var snapshot: UIView?
+    var snapshot: UIView? {
+        didSet {
+            if let delegate = delegate {
+                let tapGestureRecognizer = UITapGestureRecognizer(target: delegate, action: #selector(delegate.dismiss))
+                snapshot?.addGestureRecognizer(tapGestureRecognizer)
+            }
+        }
+    }
+    var delegate: MenuTransitionManagerDelegate?
 }
 
 extension MenuTransitionManager: UIViewControllerAnimatedTransitioning {

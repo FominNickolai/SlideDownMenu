@@ -79,10 +79,15 @@ class NewsTableViewController: UITableViewController {
         let menuTableViewController = segue.destination as! MenuTableViewController
         menuTableViewController.currentItem = self.title!
         menuTableViewController.transitioningDelegate = menuTransitionManager
+        menuTransitionManager.delegate = self
     }
-
 }
-
+//MARK: - MenuTransitionManagerDelegate
+extension NewsTableViewController: MenuTransitionManagerDelegate {
+    func dismiss() {
+        dismiss(animated: true, completion: nil)
+    }
+}
 
 
 
