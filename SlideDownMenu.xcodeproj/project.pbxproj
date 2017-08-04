@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7D687571F348D3800D2E3F6 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D687561F348D3800D2E3F6 /* MenuTransitionManager.swift */; };
 		F4CB3CF11DC19BE4008A85BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CB3CF01DC19BE4008A85BF /* AppDelegate.swift */; };
 		F4CB3CF61DC19BE4008A85BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CB3CF41DC19BE4008A85BF /* Main.storyboard */; };
 		F4CB3CF81DC19BE4008A85BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CB3CF71DC19BE4008A85BF /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7D687561F348D3800D2E3F6 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
 		F4CB3CED1DC19BE3008A85BF /* SlideDownMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideDownMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CB3CF01DC19BE4008A85BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4CB3CF51DC19BE4008A85BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				F4CB3D041DC19C95008A85BF /* NewsTableViewCell.swift */,
 				F4CB3D061DC19D20008A85BF /* MenuTableViewCell.swift */,
 				F4CB3D081DC19D30008A85BF /* MenuTableViewController.swift */,
+				B7D687561F348D3800D2E3F6 /* MenuTransitionManager.swift */,
 			);
 			path = SlideDownMenu;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4CB3D031DC19C3C008A85BF /* NewsTableViewController.swift in Sources */,
+				B7D687571F348D3800D2E3F6 /* MenuTransitionManager.swift in Sources */,
 				F4CB3CF11DC19BE4008A85BF /* AppDelegate.swift in Sources */,
 				F4CB3D091DC19D30008A85BF /* MenuTableViewController.swift in Sources */,
 				F4CB3D071DC19D20008A85BF /* MenuTableViewCell.swift in Sources */,

@@ -9,6 +9,8 @@
 import UIKit
 
 class NewsTableViewController: UITableViewController {
+    
+    let menuTransitionManager = MenuTransitionManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +78,7 @@ class NewsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let menuTableViewController = segue.destination as! MenuTableViewController
         menuTableViewController.currentItem = self.title!
+        menuTableViewController.transitioningDelegate = menuTransitionManager
     }
 
 }
