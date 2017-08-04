@@ -66,5 +66,35 @@ class NewsTableViewController: UITableViewController {
         return cell
     }
 
+    //MARK: - Segues
+    
+    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
+        let sourceController = segue.source as! MenuTableViewController
+        self.title = sourceController.currentItem
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let menuTableViewController = segue.destination as! MenuTableViewController
+        menuTableViewController.currentItem = self.title!
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

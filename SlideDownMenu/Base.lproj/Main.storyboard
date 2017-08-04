@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="921-23-usG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="921-23-usG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Light</string>
+        </array>
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Menu Table View Controller-->
         <scene sceneID="V62-in-cNx">
@@ -46,6 +55,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="titleLabel" destination="t3O-8G-Fr6" id="p2Q-HT-hQ5"/>
+                                    <segue destination="vyT-2f-OXa" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="WVZ-oL-Zqk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,6 +67,7 @@
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMS-zr-3h4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vyT-2f-OXa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1601" y="-233"/>
         </scene>
@@ -142,6 +153,9 @@
                     <navigationItem key="navigationItem" title="News" id="SWe-4r-AKQ">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="OoU-Hf-M6O">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="sdy-jk-Qms" kind="presentation" id="ZOY-tH-DID"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
