@@ -17,6 +17,10 @@ class MenuTableViewController: UITableViewController {
         super.viewDidLoad()
 
     }
+    
+    deinit {
+        print("MenuTableViewController deinit")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -24,6 +24,7 @@ class MenuTransitionManager: NSObject {
         }
     }
     var delegate: MenuTransitionManagerDelegate?
+    
 }
 
 extension MenuTransitionManager: UIViewControllerAnimatedTransitioning {
@@ -76,4 +77,5 @@ extension MenuTransitionManager: UIViewControllerTransitioningDelegate {
         isPresenting = false
         return self
     }
+    
 }
